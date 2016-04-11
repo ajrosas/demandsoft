@@ -1,0 +1,25 @@
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\bin\Debug\demandsoft.exe
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\bin\Debug\demandsoft.pdb
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\bin\Debug\demandsoft.xml
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.vbproj.ResolveComReference.cache
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.frmtimekeeping.resources
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.Resources.resources
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.vbproj.GenerateResource.Cache
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.exe
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.xml
+C:\Users\Shrewd\AppData\Local\Temporary Projects\demandsoft\obj\x86\Debug\demandsoft.pdb
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.vbproj.ResolveComReference.cache
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.exe
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.xml
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.pdb
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\demandsoft.exe
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\demandsoft.pdb
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\demandsoft.xml
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmpayroll.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimekeeping.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.Resources.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.vbproj.GenerateResource.Cache
