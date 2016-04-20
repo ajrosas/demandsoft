@@ -23,3 +23,5 @@ C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\
 C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimekeeping.resources
 C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.Resources.resources
 C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.vbproj.GenerateResource.Cache
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\bin\Debug\demandsoft.exe.config
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.vbprojResolveAssemblyReference.cache

@@ -61,33 +61,30 @@ Public Class frmtimekeeping
                 'FORMATTEDVALUE IS GETTING THE VALUE OF THE CELL AS A FORMATED DISPLAY
                 If row.Cells(0).FormattedValue <> "" Then
                     'STORE YOUR QUERY IN A VARIABLE THAT YOU HAVE DECLARED
-                    sql = "INSERT INTO tbltimekeeping (firstname,middlename,lastname,regular_hours_required,holiday_hours_required,paid_holiday_hours,regular_hours_worked,required_holiday_hours,absences,tardiness,undertime,leaved,leave_type,rest_day,holiday,hours_type,nsd,overtime,overtime_type,month,date_from,date_to,year) VALUES ('" _
-                                   & CStr(row.Cells(0).FormattedValue) & "','" _
-                                   & CStr(row.Cells(1).FormattedValue) & "','" _
+                    sql = "INSERT INTO tbltimekeeping (firstname,middlename,lastname,regular_hours_worked,absences,tardiness,undertime,regular_ot,sunday_ot,sunday_ot_excess,legal_ot,legal_ot_excess,legal_holiday_w_pay,night_differential,night_differential_ot,sunday_night_differential,sunday_night_differential_ot,legal_night_differential,legal_night_differential_ot,month,date_from,date_to,year) VALUES ('" _
+                                    & CStr(row.Cells(0).FormattedValue) & "','" _
+                                    & CStr(row.Cells(1).FormattedValue) & "','" _
                                     & CStr(row.Cells(2).FormattedValue) & "','" _
                                     & CStr(row.Cells(3).FormattedValue) & "','" _
-                                      & CStr(row.Cells(4).FormattedValue) & "','" _
-                    & CStr(row.Cells(5).FormattedValue) & "','" _
-                    & CStr(row.Cells(6).FormattedValue) & "','" _
-                    & CStr(row.Cells(7).FormattedValue) & "','" _
-                      & CStr(row.Cells(8).FormattedValue) & "','" _
-                      & CStr(row.Cells(9).FormattedValue) & "','" _
-                    & CStr(row.Cells(10).FormattedValue) & "','" _
-                          & CStr(row.Cells(11).FormattedValue) & "','" _
-                           & CStr(row.Cells(12).FormattedValue) & "','" _
-                    & CStr(row.Cells(13).FormattedValue) & "','" _
-                    & CStr(row.Cells(14).FormattedValue) & "','" _
-                    & CStr(row.Cells(15).FormattedValue) & "','" _
-                    & CStr(row.Cells(16).FormattedValue) & "','" _
-                     & CStr(row.Cells(17).FormattedValue) & "','" _
-                       & CStr(row.Cells(18).FormattedValue) & "','" _
-                                         & txtMonth.Text & "','" _
-                                                       & txtdatefrom.Text & "','" _
-                                                        & txtdateto.Text & "','" _
-                                                         & txtYear.Text & "')"
-
-
-                   
+                                    & CStr(row.Cells(4).FormattedValue) & "','" _
+                                    & CStr(row.Cells(5).FormattedValue) & "','" _
+                                    & CStr(row.Cells(6).FormattedValue) & "','" _
+                                    & CStr(row.Cells(7).FormattedValue) & "','" _
+                                    & CStr(row.Cells(8).FormattedValue) & "','" _
+                                    & CStr(row.Cells(9).FormattedValue) & "','" _
+                                    & CStr(row.Cells(10).FormattedValue) & "','" _
+                                    & CStr(row.Cells(11).FormattedValue) & "','" _
+                                    & CStr(row.Cells(12).FormattedValue) & "','" _
+                                    & CStr(row.Cells(13).FormattedValue) & "','" _
+                                    & CStr(row.Cells(14).FormattedValue) & "','" _
+                                    & CStr(row.Cells(15).FormattedValue) & "','" _
+                                    & CStr(row.Cells(16).FormattedValue) & "','" _
+                                    & CStr(row.Cells(17).FormattedValue) & "','" _
+                                    & CStr(row.Cells(18).FormattedValue) & "','" _
+                                    & txtMonth.Text & "','" _
+                                    & txtdatefrom.Text & "','" _
+                                    & txtdateto.Text & "','" _
+                                    & txtYear.Text & "')"
                                                       
                     'SET YOUR COMMANDS TO PROVIDE A TEXT-BASE INTERFACE INTO THE MYSQL DATABASE SERVER. 
                     'AND ONCE IT'S CONNECTED, YOU CAN MAKE QUERY OR MANY OTHER OPERATION.
