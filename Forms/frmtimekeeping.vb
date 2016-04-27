@@ -8,7 +8,7 @@ Imports System.IO
 Imports MySql.Data.MySqlClient
 Public Class frmtimekeeping
     'SET UP A CONNECTION OF MYSQL DATABASE AND VISUAL BASIC.
-    Dim con As MySqlConnection = New MySqlConnection("Server=gemsbrook.arvixe.com; userid=ajrosas_root; password=P@ssw0rd2016; database=ajrosas_orangepayroll;")
+    Dim con As MySqlConnection = New MySqlConnection("Server=localhost; userid=root; password=; database=demandph;")
     'A SET OF COMMANDS IN MYSQL
     Dim cmd As New MySqlCommand
     'SET THE BRIDGE BETWEEN THE DATABASE AND THE DATASET FOR SAVING AND RETRIEVING DATA.

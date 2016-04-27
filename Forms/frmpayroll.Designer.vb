@@ -128,6 +128,7 @@ Partial Class frmpayroll
         Me.Label26 = New System.Windows.Forms.Label()
         Me.txtEmployeename = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnPayslip = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtYear
@@ -791,6 +792,7 @@ Partial Class frmpayroll
         '
         'txtTardinessval
         '
+        Me.txtTardinessval.Enabled = False
         Me.txtTardinessval.Location = New System.Drawing.Point(838, 202)
         Me.txtTardinessval.Name = "txtTardinessval"
         Me.txtTardinessval.Size = New System.Drawing.Size(29, 20)
@@ -798,6 +800,7 @@ Partial Class frmpayroll
         '
         'txtUndertimeval
         '
+        Me.txtUndertimeval.Enabled = False
         Me.txtUndertimeval.Location = New System.Drawing.Point(838, 176)
         Me.txtUndertimeval.Name = "txtUndertimeval"
         Me.txtUndertimeval.Size = New System.Drawing.Size(29, 20)
@@ -1036,11 +1039,21 @@ Partial Class frmpayroll
         Me.Button1.Text = "Import"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnPayslip
+        '
+        Me.btnPayslip.Location = New System.Drawing.Point(838, 451)
+        Me.btnPayslip.Name = "btnPayslip"
+        Me.btnPayslip.Size = New System.Drawing.Size(75, 23)
+        Me.btnPayslip.TabIndex = 263
+        Me.btnPayslip.Text = "Payslip"
+        Me.btnPayslip.UseVisualStyleBackColor = True
+        '
         'frmpayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(998, 691)
+        Me.Controls.Add(Me.btnPayslip)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtEmployeename)
         Me.Controls.Add(Me.txtNetpay1)
@@ -1259,4 +1272,5 @@ Partial Class frmpayroll
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents txtEmployeename As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnPayslip As System.Windows.Forms.Button
 End Class

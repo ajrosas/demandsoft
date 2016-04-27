@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class frmpayroll
     'SET UP A CONNECTION OF MYSQL DATABASE AND VISUAL BASIC.
-    Dim con As MySqlConnection = New MySqlConnection("Server=gemsbrook.arvixe.com; userid=ajrosas_root; password=P@ssw0rd2016; database=ajrosas_orangepayroll;")
+    Dim con As MySqlConnection = New MySqlConnection("Server=localhost; userid=root; password=; database=demandph;")
     'A SET OF COMMANDS IN MYSQL
     Dim cmd As New MySqlCommand
     'SET THE BRIDGE BETWEEN THE DATABASE AND THE DATASET FOR SAVING AND RETRIEVING DATA.
@@ -374,7 +374,7 @@ Public Class frmpayroll
     Private Sub txtEmployeename_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtEmployeename.TextChanged
         Try
             con.Open()
-            sql = "SELECT * FROM tbltimekeeping WHERE firstname+' ' + middlename+' '+lastname ='" & txtEmployeename.Text & "'"
+            sql = "SELECT * FROM tbltimekeeping WHERE firstname+' ' + middlename+' '+lastname ='" & txtEmployeename.Text & "' AND date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
             cmd = New MySqlCommand(sql, con)
             dr = cmd.ExecuteReader
             While dr.Read
@@ -409,5 +409,13 @@ Public Class frmpayroll
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         frmtimekeeping.Show()
+    End Sub
+
+    Private Sub txtdateto_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtdateto.TextChanged
+
+    End Sub
+
+    Private Sub btnPayslip_Click(sender As System.Object, e As System.EventArgs) Handles btnPayslip.Click
+        frmpayslip.Show()
     End Sub
 End Class
