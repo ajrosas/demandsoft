@@ -40,4 +40,14 @@ C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\dema
 C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.Resources.resources
 C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.vbproj.GenerateResource.Cache
 C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmpayslip.resources
-C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.vbprojResolveAssemblyReference.cache
+C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmtimelog.resources
+C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmtimekeepingtemp.resources
+C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmovertime.resources
+C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmtimein.resources
+C:\Users\Shrewd\Downloads\demandsoft-master\demandsoft-master\obj\x86\Debug\demandsoft.frmtimeout.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmovertime.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmpayslip.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimein.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimekeepingtemp.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimelog.resources
+C:\Users\Shrewd\documents\visual studio 2010\Projects\demandsoft\demandsoft\obj\x86\Debug\demandsoft.frmtimeout.resources

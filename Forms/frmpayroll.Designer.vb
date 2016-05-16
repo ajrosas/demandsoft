@@ -129,6 +129,7 @@ Partial Class frmpayroll
         Me.txtEmployeename = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnPayslip = New System.Windows.Forms.Button()
+        Me.Label40 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtYear
@@ -212,9 +213,9 @@ Partial Class frmpayroll
         'cmbEmployeename
         '
         Me.cmbEmployeename.FormattingEnabled = True
-        Me.cmbEmployeename.Location = New System.Drawing.Point(129, 43)
+        Me.cmbEmployeename.Location = New System.Drawing.Point(95, 43)
         Me.cmbEmployeename.Name = "cmbEmployeename"
-        Me.cmbEmployeename.Size = New System.Drawing.Size(326, 21)
+        Me.cmbEmployeename.Size = New System.Drawing.Size(43, 21)
         Me.cmbEmployeename.TabIndex = 57
         '
         'Label4
@@ -251,7 +252,7 @@ Partial Class frmpayroll
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(915, 451)
+        Me.btnSave.Location = New System.Drawing.Point(885, 450)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
         Me.btnSave.TabIndex = 65
@@ -261,10 +262,12 @@ Partial Class frmpayroll
         'txtDaystotalwlegal
         '
         Me.txtDaystotalwlegal.Enabled = False
-        Me.txtDaystotalwlegal.Location = New System.Drawing.Point(107, 388)
+        Me.txtDaystotalwlegal.Location = New System.Drawing.Point(107, 164)
         Me.txtDaystotalwlegal.Name = "txtDaystotalwlegal"
         Me.txtDaystotalwlegal.Size = New System.Drawing.Size(29, 20)
         Me.txtDaystotalwlegal.TabIndex = 232
+        Me.txtDaystotalwlegal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtDaystotalwlegal.Visible = False
         '
         'txtDaysworkedwsunday
         '
@@ -273,6 +276,7 @@ Partial Class frmpayroll
         Me.txtDaysworkedwsunday.Name = "txtDaysworkedwsunday"
         Me.txtDaysworkedwsunday.Size = New System.Drawing.Size(29, 20)
         Me.txtDaysworkedwsunday.TabIndex = 231
+        Me.txtDaysworkedwsunday.Visible = False
         '
         'txtId
         '
@@ -285,7 +289,7 @@ Partial Class frmpayroll
         'txtMiddlename
         '
         Me.txtMiddlename.Enabled = False
-        Me.txtMiddlename.Location = New System.Drawing.Point(340, 71)
+        Me.txtMiddlename.Location = New System.Drawing.Point(355, 41)
         Me.txtMiddlename.Name = "txtMiddlename"
         Me.txtMiddlename.Size = New System.Drawing.Size(100, 20)
         Me.txtMiddlename.TabIndex = 229
@@ -293,7 +297,7 @@ Partial Class frmpayroll
         'txtFirstname
         '
         Me.txtFirstname.Enabled = False
-        Me.txtFirstname.Location = New System.Drawing.Point(235, 71)
+        Me.txtFirstname.Location = New System.Drawing.Point(250, 41)
         Me.txtFirstname.Name = "txtFirstname"
         Me.txtFirstname.Size = New System.Drawing.Size(100, 20)
         Me.txtFirstname.TabIndex = 228
@@ -301,7 +305,7 @@ Partial Class frmpayroll
         'txtLastname
         '
         Me.txtLastname.Enabled = False
-        Me.txtLastname.Location = New System.Drawing.Point(129, 71)
+        Me.txtLastname.Location = New System.Drawing.Point(144, 41)
         Me.txtLastname.Name = "txtLastname"
         Me.txtLastname.Size = New System.Drawing.Size(100, 20)
         Me.txtLastname.TabIndex = 227
@@ -313,36 +317,39 @@ Partial Class frmpayroll
         Me.txtReguralhoursworked.Name = "txtReguralhoursworked"
         Me.txtReguralhoursworked.Size = New System.Drawing.Size(29, 20)
         Me.txtReguralhoursworked.TabIndex = 226
+        Me.txtReguralhoursworked.Visible = False
         '
         'txtGrosspay1
         '
         Me.txtGrosspay1.Enabled = False
-        Me.txtGrosspay1.Location = New System.Drawing.Point(281, 397)
+        Me.txtGrosspay1.Location = New System.Drawing.Point(142, 190)
         Me.txtGrosspay1.Name = "txtGrosspay1"
-        Me.txtGrosspay1.Size = New System.Drawing.Size(100, 20)
+        Me.txtGrosspay1.Size = New System.Drawing.Size(81, 20)
         Me.txtGrosspay1.TabIndex = 211
+        Me.txtGrosspay1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtlegalholidaywpayval
         '
         Me.txtlegalholidaywpayval.Enabled = False
-        Me.txtlegalholidaywpayval.Location = New System.Drawing.Point(107, 362)
+        Me.txtlegalholidaywpayval.Location = New System.Drawing.Point(124, 379)
         Me.txtlegalholidaywpayval.Name = "txtlegalholidaywpayval"
-        Me.txtlegalholidaywpayval.Size = New System.Drawing.Size(29, 20)
+        Me.txtlegalholidaywpayval.Size = New System.Drawing.Size(39, 20)
         Me.txtlegalholidaywpayval.TabIndex = 225
+        Me.txtlegalholidaywpayval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtlegalholidaywpay
         '
         Me.txtlegalholidaywpay.Enabled = False
-        Me.txtlegalholidaywpay.Location = New System.Drawing.Point(142, 361)
+        Me.txtlegalholidaywpay.Location = New System.Drawing.Point(169, 377)
         Me.txtlegalholidaywpay.Name = "txtlegalholidaywpay"
-        Me.txtlegalholidaywpay.Size = New System.Drawing.Size(100, 20)
+        Me.txtlegalholidaywpay.Size = New System.Drawing.Size(81, 20)
         Me.txtlegalholidaywpay.TabIndex = 224
         Me.txtlegalholidaywpay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(20, 361)
+        Me.Label39.Location = New System.Drawing.Point(20, 377)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(84, 13)
         Me.Label39.TabIndex = 223
@@ -351,97 +358,108 @@ Partial Class frmpayroll
         'txtLegalnightdiffotval
         '
         Me.txtLegalnightdiffotval.Enabled = False
-        Me.txtLegalnightdiffotval.Location = New System.Drawing.Point(352, 361)
+        Me.txtLegalnightdiffotval.Location = New System.Drawing.Point(392, 377)
         Me.txtLegalnightdiffotval.Name = "txtLegalnightdiffotval"
-        Me.txtLegalnightdiffotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtLegalnightdiffotval.Size = New System.Drawing.Size(39, 20)
         Me.txtLegalnightdiffotval.TabIndex = 222
+        Me.txtLegalnightdiffotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtLegalnightdiffval
         '
         Me.txtLegalnightdiffval.Enabled = False
-        Me.txtLegalnightdiffval.Location = New System.Drawing.Point(352, 335)
+        Me.txtLegalnightdiffval.Location = New System.Drawing.Point(392, 351)
         Me.txtLegalnightdiffval.Name = "txtLegalnightdiffval"
-        Me.txtLegalnightdiffval.Size = New System.Drawing.Size(29, 20)
+        Me.txtLegalnightdiffval.Size = New System.Drawing.Size(39, 20)
         Me.txtLegalnightdiffval.TabIndex = 221
+        Me.txtLegalnightdiffval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtSundaynightdiffotval
         '
         Me.txtSundaynightdiffotval.Enabled = False
-        Me.txtSundaynightdiffotval.Location = New System.Drawing.Point(352, 309)
+        Me.txtSundaynightdiffotval.Location = New System.Drawing.Point(392, 325)
         Me.txtSundaynightdiffotval.Name = "txtSundaynightdiffotval"
-        Me.txtSundaynightdiffotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtSundaynightdiffotval.Size = New System.Drawing.Size(39, 20)
         Me.txtSundaynightdiffotval.TabIndex = 220
+        Me.txtSundaynightdiffotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtSundaynightdiffval
         '
         Me.txtSundaynightdiffval.Enabled = False
-        Me.txtSundaynightdiffval.Location = New System.Drawing.Point(352, 283)
+        Me.txtSundaynightdiffval.Location = New System.Drawing.Point(392, 299)
         Me.txtSundaynightdiffval.Name = "txtSundaynightdiffval"
-        Me.txtSundaynightdiffval.Size = New System.Drawing.Size(29, 20)
+        Me.txtSundaynightdiffval.Size = New System.Drawing.Size(39, 20)
         Me.txtSundaynightdiffval.TabIndex = 219
+        Me.txtSundaynightdiffval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtNightdifferentialotval
         '
         Me.txtNightdifferentialotval.Enabled = False
-        Me.txtNightdifferentialotval.Location = New System.Drawing.Point(352, 257)
+        Me.txtNightdifferentialotval.Location = New System.Drawing.Point(392, 273)
         Me.txtNightdifferentialotval.Name = "txtNightdifferentialotval"
-        Me.txtNightdifferentialotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtNightdifferentialotval.Size = New System.Drawing.Size(39, 20)
         Me.txtNightdifferentialotval.TabIndex = 218
+        Me.txtNightdifferentialotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtNightdifferentialval
         '
         Me.txtNightdifferentialval.Enabled = False
-        Me.txtNightdifferentialval.Location = New System.Drawing.Point(352, 233)
+        Me.txtNightdifferentialval.Location = New System.Drawing.Point(392, 249)
         Me.txtNightdifferentialval.Name = "txtNightdifferentialval"
-        Me.txtNightdifferentialval.Size = New System.Drawing.Size(29, 20)
+        Me.txtNightdifferentialval.Size = New System.Drawing.Size(39, 20)
         Me.txtNightdifferentialval.TabIndex = 217
+        Me.txtNightdifferentialval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtLegalotexcessval
         '
         Me.txtLegalotexcessval.Enabled = False
-        Me.txtLegalotexcessval.Location = New System.Drawing.Point(107, 336)
+        Me.txtLegalotexcessval.Location = New System.Drawing.Point(124, 353)
         Me.txtLegalotexcessval.Name = "txtLegalotexcessval"
-        Me.txtLegalotexcessval.Size = New System.Drawing.Size(29, 20)
+        Me.txtLegalotexcessval.Size = New System.Drawing.Size(39, 20)
         Me.txtLegalotexcessval.TabIndex = 216
+        Me.txtLegalotexcessval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtLegalotval
         '
         Me.txtLegalotval.Enabled = False
-        Me.txtLegalotval.Location = New System.Drawing.Point(107, 310)
+        Me.txtLegalotval.Location = New System.Drawing.Point(124, 327)
         Me.txtLegalotval.Name = "txtLegalotval"
-        Me.txtLegalotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtLegalotval.Size = New System.Drawing.Size(39, 20)
         Me.txtLegalotval.TabIndex = 215
+        Me.txtLegalotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtSunotexcessval
         '
         Me.txtSunotexcessval.Enabled = False
-        Me.txtSunotexcessval.Location = New System.Drawing.Point(107, 284)
+        Me.txtSunotexcessval.Location = New System.Drawing.Point(124, 301)
         Me.txtSunotexcessval.Name = "txtSunotexcessval"
-        Me.txtSunotexcessval.Size = New System.Drawing.Size(29, 20)
+        Me.txtSunotexcessval.Size = New System.Drawing.Size(39, 20)
         Me.txtSunotexcessval.TabIndex = 214
+        Me.txtSunotexcessval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtSunotval
         '
         Me.txtSunotval.Enabled = False
-        Me.txtSunotval.Location = New System.Drawing.Point(107, 258)
+        Me.txtSunotval.Location = New System.Drawing.Point(124, 275)
         Me.txtSunotval.Name = "txtSunotval"
-        Me.txtSunotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtSunotval.Size = New System.Drawing.Size(39, 20)
         Me.txtSunotval.TabIndex = 213
+        Me.txtSunotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtRegotval
         '
         Me.txtRegotval.Enabled = False
-        Me.txtRegotval.Location = New System.Drawing.Point(107, 232)
+        Me.txtRegotval.Location = New System.Drawing.Point(124, 249)
         Me.txtRegotval.Name = "txtRegotval"
-        Me.txtRegotval.Size = New System.Drawing.Size(29, 20)
+        Me.txtRegotval.Size = New System.Drawing.Size(39, 20)
         Me.txtRegotval.TabIndex = 212
+        Me.txtRegotval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtGrosspay
         '
         Me.txtGrosspay.Enabled = False
-        Me.txtGrosspay.Location = New System.Drawing.Point(387, 397)
+        Me.txtGrosspay.Location = New System.Drawing.Point(437, 412)
         Me.txtGrosspay.Name = "txtGrosspay"
-        Me.txtGrosspay.Size = New System.Drawing.Size(100, 20)
+        Me.txtGrosspay.Size = New System.Drawing.Size(81, 20)
         Me.txtGrosspay.TabIndex = 210
         Me.txtGrosspay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -449,7 +467,7 @@ Partial Class frmpayroll
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(265, 397)
+        Me.Label25.Location = New System.Drawing.Point(265, 413)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(64, 13)
         Me.Label25.TabIndex = 209
@@ -458,16 +476,16 @@ Partial Class frmpayroll
         'txtLegalnightdiffot
         '
         Me.txtLegalnightdiffot.Enabled = False
-        Me.txtLegalnightdiffot.Location = New System.Drawing.Point(387, 361)
+        Me.txtLegalnightdiffot.Location = New System.Drawing.Point(437, 376)
         Me.txtLegalnightdiffot.Name = "txtLegalnightdiffot"
-        Me.txtLegalnightdiffot.Size = New System.Drawing.Size(100, 20)
+        Me.txtLegalnightdiffot.Size = New System.Drawing.Size(81, 20)
         Me.txtLegalnightdiffot.TabIndex = 208
         Me.txtLegalnightdiffot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(265, 361)
+        Me.Label24.Location = New System.Drawing.Point(265, 377)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(98, 13)
         Me.Label24.TabIndex = 207
@@ -476,16 +494,16 @@ Partial Class frmpayroll
         'txtLegalnightdiff
         '
         Me.txtLegalnightdiff.Enabled = False
-        Me.txtLegalnightdiff.Location = New System.Drawing.Point(387, 335)
+        Me.txtLegalnightdiff.Location = New System.Drawing.Point(437, 350)
         Me.txtLegalnightdiff.Name = "txtLegalnightdiff"
-        Me.txtLegalnightdiff.Size = New System.Drawing.Size(100, 20)
+        Me.txtLegalnightdiff.Size = New System.Drawing.Size(81, 20)
         Me.txtLegalnightdiff.TabIndex = 206
         Me.txtLegalnightdiff.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(265, 335)
+        Me.Label23.Location = New System.Drawing.Point(265, 351)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(83, 13)
         Me.Label23.TabIndex = 205
@@ -494,16 +512,16 @@ Partial Class frmpayroll
         'txtSundaynightdiffot
         '
         Me.txtSundaynightdiffot.Enabled = False
-        Me.txtSundaynightdiffot.Location = New System.Drawing.Point(387, 309)
+        Me.txtSundaynightdiffot.Location = New System.Drawing.Point(437, 324)
         Me.txtSundaynightdiffot.Name = "txtSundaynightdiffot"
-        Me.txtSundaynightdiffot.Size = New System.Drawing.Size(100, 20)
+        Me.txtSundaynightdiffot.Size = New System.Drawing.Size(81, 20)
         Me.txtSundaynightdiffot.TabIndex = 204
         Me.txtSundaynightdiffot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(265, 309)
+        Me.Label22.Location = New System.Drawing.Point(265, 325)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(91, 13)
         Me.Label22.TabIndex = 203
@@ -512,16 +530,16 @@ Partial Class frmpayroll
         'txtSundaynightdiff
         '
         Me.txtSundaynightdiff.Enabled = False
-        Me.txtSundaynightdiff.Location = New System.Drawing.Point(387, 283)
+        Me.txtSundaynightdiff.Location = New System.Drawing.Point(437, 298)
         Me.txtSundaynightdiff.Name = "txtSundaynightdiff"
-        Me.txtSundaynightdiff.Size = New System.Drawing.Size(100, 20)
+        Me.txtSundaynightdiff.Size = New System.Drawing.Size(81, 20)
         Me.txtSundaynightdiff.TabIndex = 202
         Me.txtSundaynightdiff.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(265, 283)
+        Me.Label21.Location = New System.Drawing.Point(265, 299)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(124, 13)
         Me.Label21.TabIndex = 201
@@ -530,16 +548,16 @@ Partial Class frmpayroll
         'txtNightdifferentialot
         '
         Me.txtNightdifferentialot.Enabled = False
-        Me.txtNightdifferentialot.Location = New System.Drawing.Point(387, 257)
+        Me.txtNightdifferentialot.Location = New System.Drawing.Point(437, 272)
         Me.txtNightdifferentialot.Name = "txtNightdifferentialot"
-        Me.txtNightdifferentialot.Size = New System.Drawing.Size(100, 20)
+        Me.txtNightdifferentialot.Size = New System.Drawing.Size(81, 20)
         Me.txtNightdifferentialot.TabIndex = 200
         Me.txtNightdifferentialot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(265, 257)
+        Me.Label20.Location = New System.Drawing.Point(265, 273)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(103, 13)
         Me.Label20.TabIndex = 199
@@ -548,16 +566,16 @@ Partial Class frmpayroll
         'txtNightdifferential
         '
         Me.txtNightdifferential.Enabled = False
-        Me.txtNightdifferential.Location = New System.Drawing.Point(387, 232)
+        Me.txtNightdifferential.Location = New System.Drawing.Point(437, 247)
         Me.txtNightdifferential.Name = "txtNightdifferential"
-        Me.txtNightdifferential.Size = New System.Drawing.Size(100, 20)
+        Me.txtNightdifferential.Size = New System.Drawing.Size(81, 20)
         Me.txtNightdifferential.TabIndex = 198
         Me.txtNightdifferential.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(265, 232)
+        Me.Label19.Location = New System.Drawing.Point(265, 248)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(85, 13)
         Me.Label19.TabIndex = 197
@@ -566,16 +584,16 @@ Partial Class frmpayroll
         'txtLegalotexcess
         '
         Me.txtLegalotexcess.Enabled = False
-        Me.txtLegalotexcess.Location = New System.Drawing.Point(142, 335)
+        Me.txtLegalotexcess.Location = New System.Drawing.Point(169, 351)
         Me.txtLegalotexcess.Name = "txtLegalotexcess"
-        Me.txtLegalotexcess.Size = New System.Drawing.Size(100, 20)
+        Me.txtLegalotexcess.Size = New System.Drawing.Size(81, 20)
         Me.txtLegalotexcess.TabIndex = 196
         Me.txtLegalotexcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(20, 335)
+        Me.Label18.Location = New System.Drawing.Point(20, 351)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(88, 13)
         Me.Label18.TabIndex = 195
@@ -584,16 +602,16 @@ Partial Class frmpayroll
         'txtLegalot
         '
         Me.txtLegalot.Enabled = False
-        Me.txtLegalot.Location = New System.Drawing.Point(142, 309)
+        Me.txtLegalot.Location = New System.Drawing.Point(169, 325)
         Me.txtLegalot.Name = "txtLegalot"
-        Me.txtLegalot.Size = New System.Drawing.Size(100, 20)
+        Me.txtLegalot.Size = New System.Drawing.Size(81, 20)
         Me.txtLegalot.TabIndex = 194
         Me.txtLegalot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(20, 309)
+        Me.Label17.Location = New System.Drawing.Point(20, 325)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(51, 13)
         Me.Label17.TabIndex = 193
@@ -602,16 +620,16 @@ Partial Class frmpayroll
         'txtSunotexcess
         '
         Me.txtSunotexcess.Enabled = False
-        Me.txtSunotexcess.Location = New System.Drawing.Point(142, 283)
+        Me.txtSunotexcess.Location = New System.Drawing.Point(169, 299)
         Me.txtSunotexcess.Name = "txtSunotexcess"
-        Me.txtSunotexcess.Size = New System.Drawing.Size(100, 20)
+        Me.txtSunotexcess.Size = New System.Drawing.Size(81, 20)
         Me.txtSunotexcess.TabIndex = 192
         Me.txtSunotexcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(20, 283)
+        Me.Label16.Location = New System.Drawing.Point(20, 299)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(98, 13)
         Me.Label16.TabIndex = 191
@@ -620,16 +638,16 @@ Partial Class frmpayroll
         'txtSunot
         '
         Me.txtSunot.Enabled = False
-        Me.txtSunot.Location = New System.Drawing.Point(142, 257)
+        Me.txtSunot.Location = New System.Drawing.Point(169, 273)
         Me.txtSunot.Name = "txtSunot"
-        Me.txtSunot.Size = New System.Drawing.Size(100, 20)
+        Me.txtSunot.Size = New System.Drawing.Size(81, 20)
         Me.txtSunot.TabIndex = 190
         Me.txtSunot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(20, 257)
+        Me.Label15.Location = New System.Drawing.Point(20, 273)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(61, 13)
         Me.Label15.TabIndex = 189
@@ -638,16 +656,16 @@ Partial Class frmpayroll
         'txtRegot
         '
         Me.txtRegot.Enabled = False
-        Me.txtRegot.Location = New System.Drawing.Point(142, 231)
+        Me.txtRegot.Location = New System.Drawing.Point(169, 247)
         Me.txtRegot.Name = "txtRegot"
-        Me.txtRegot.Size = New System.Drawing.Size(100, 20)
+        Me.txtRegot.Size = New System.Drawing.Size(81, 20)
         Me.txtRegot.TabIndex = 188
         Me.txtRegot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(20, 231)
+        Me.Label14.Location = New System.Drawing.Point(20, 247)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(65, 13)
         Me.Label14.TabIndex = 187
@@ -657,7 +675,7 @@ Partial Class frmpayroll
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.Red
-        Me.Label13.Location = New System.Drawing.Point(20, 207)
+        Me.Label13.Location = New System.Drawing.Point(20, 223)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(54, 13)
         Me.Label13.TabIndex = 186
@@ -666,16 +684,16 @@ Partial Class frmpayroll
         'txtMeal
         '
         Me.txtMeal.Enabled = False
-        Me.txtMeal.Location = New System.Drawing.Point(387, 164)
+        Me.txtMeal.Location = New System.Drawing.Point(389, 190)
         Me.txtMeal.Name = "txtMeal"
-        Me.txtMeal.Size = New System.Drawing.Size(100, 20)
+        Me.txtMeal.Size = New System.Drawing.Size(81, 20)
         Me.txtMeal.TabIndex = 185
         Me.txtMeal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(265, 164)
+        Me.Label12.Location = New System.Drawing.Point(267, 190)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(69, 13)
         Me.Label12.TabIndex = 184
@@ -684,16 +702,16 @@ Partial Class frmpayroll
         'txtSocioecono
         '
         Me.txtSocioecono.Enabled = False
-        Me.txtSocioecono.Location = New System.Drawing.Point(387, 138)
+        Me.txtSocioecono.Location = New System.Drawing.Point(389, 164)
         Me.txtSocioecono.Name = "txtSocioecono"
-        Me.txtSocioecono.Size = New System.Drawing.Size(100, 20)
+        Me.txtSocioecono.Size = New System.Drawing.Size(81, 20)
         Me.txtSocioecono.TabIndex = 183
         Me.txtSocioecono.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(265, 138)
+        Me.Label11.Location = New System.Drawing.Point(267, 164)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(122, 13)
         Me.Label11.TabIndex = 182
@@ -702,16 +720,16 @@ Partial Class frmpayroll
         'txtProduction
         '
         Me.txtProduction.Enabled = False
-        Me.txtProduction.Location = New System.Drawing.Point(387, 112)
+        Me.txtProduction.Location = New System.Drawing.Point(389, 138)
         Me.txtProduction.Name = "txtProduction"
-        Me.txtProduction.Size = New System.Drawing.Size(100, 20)
+        Me.txtProduction.Size = New System.Drawing.Size(81, 20)
         Me.txtProduction.TabIndex = 181
         Me.txtProduction.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(265, 112)
+        Me.Label10.Location = New System.Drawing.Point(267, 138)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(110, 13)
         Me.Label10.TabIndex = 180
@@ -721,7 +739,7 @@ Partial Class frmpayroll
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.Red
-        Me.Label9.Location = New System.Drawing.Point(265, 88)
+        Me.Label9.Location = New System.Drawing.Point(267, 114)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(61, 13)
         Me.Label9.TabIndex = 179
@@ -732,7 +750,7 @@ Partial Class frmpayroll
         Me.txtRate.Enabled = False
         Me.txtRate.Location = New System.Drawing.Point(142, 164)
         Me.txtRate.Name = "txtRate"
-        Me.txtRate.Size = New System.Drawing.Size(100, 20)
+        Me.txtRate.Size = New System.Drawing.Size(81, 20)
         Me.txtRate.TabIndex = 178
         Me.txtRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -750,7 +768,7 @@ Partial Class frmpayroll
         Me.txtDaystotal.Enabled = False
         Me.txtDaystotal.Location = New System.Drawing.Point(142, 138)
         Me.txtDaystotal.Name = "txtDaystotal"
-        Me.txtDaystotal.Size = New System.Drawing.Size(100, 20)
+        Me.txtDaystotal.Size = New System.Drawing.Size(81, 20)
         Me.txtDaystotal.TabIndex = 176
         Me.txtDaystotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -768,7 +786,7 @@ Partial Class frmpayroll
         Me.txtDaysworked.Enabled = False
         Me.txtDaysworked.Location = New System.Drawing.Point(142, 112)
         Me.txtDaysworked.Name = "txtDaysworked"
-        Me.txtDaysworked.Size = New System.Drawing.Size(100, 20)
+        Me.txtDaysworked.Size = New System.Drawing.Size(81, 20)
         Me.txtDaysworked.TabIndex = 174
         Me.txtDaysworked.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -784,34 +802,38 @@ Partial Class frmpayroll
         'txtNetpay1
         '
         Me.txtNetpay1.Enabled = False
-        Me.txtNetpay1.Location = New System.Drawing.Point(767, 393)
+        Me.txtNetpay1.Location = New System.Drawing.Point(879, 419)
         Me.txtNetpay1.Name = "txtNetpay1"
-        Me.txtNetpay1.Size = New System.Drawing.Size(100, 20)
+        Me.txtNetpay1.Size = New System.Drawing.Size(81, 20)
         Me.txtNetpay1.TabIndex = 260
         Me.txtNetpay1.TabStop = False
+        Me.txtNetpay1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtNetpay1.Visible = False
         '
         'txtTardinessval
         '
         Me.txtTardinessval.Enabled = False
-        Me.txtTardinessval.Location = New System.Drawing.Point(838, 202)
+        Me.txtTardinessval.Location = New System.Drawing.Point(834, 271)
         Me.txtTardinessval.Name = "txtTardinessval"
-        Me.txtTardinessval.Size = New System.Drawing.Size(29, 20)
+        Me.txtTardinessval.Size = New System.Drawing.Size(39, 20)
         Me.txtTardinessval.TabIndex = 259
+        Me.txtTardinessval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtUndertimeval
         '
         Me.txtUndertimeval.Enabled = False
-        Me.txtUndertimeval.Location = New System.Drawing.Point(838, 176)
+        Me.txtUndertimeval.Location = New System.Drawing.Point(834, 245)
         Me.txtUndertimeval.Name = "txtUndertimeval"
-        Me.txtUndertimeval.Size = New System.Drawing.Size(29, 20)
+        Me.txtUndertimeval.Size = New System.Drawing.Size(39, 20)
         Me.txtUndertimeval.TabIndex = 258
+        Me.txtUndertimeval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtNetpay
         '
         Me.txtNetpay.Enabled = False
-        Me.txtNetpay.Location = New System.Drawing.Point(873, 393)
+        Me.txtNetpay.Location = New System.Drawing.Point(879, 393)
         Me.txtNetpay.Name = "txtNetpay"
-        Me.txtNetpay.Size = New System.Drawing.Size(100, 20)
+        Me.txtNetpay.Size = New System.Drawing.Size(81, 20)
         Me.txtNetpay.TabIndex = 257
         Me.txtNetpay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -819,7 +841,7 @@ Partial Class frmpayroll
         '
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(751, 393)
+        Me.Label38.Location = New System.Drawing.Point(761, 390)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(52, 13)
         Me.Label38.TabIndex = 256
@@ -827,16 +849,16 @@ Partial Class frmpayroll
         '
         'txtOtherdeductions
         '
-        Me.txtOtherdeductions.Location = New System.Drawing.Point(873, 280)
+        Me.txtOtherdeductions.Location = New System.Drawing.Point(879, 348)
         Me.txtOtherdeductions.Name = "txtOtherdeductions"
-        Me.txtOtherdeductions.Size = New System.Drawing.Size(100, 20)
+        Me.txtOtherdeductions.Size = New System.Drawing.Size(81, 20)
         Me.txtOtherdeductions.TabIndex = 255
         Me.txtOtherdeductions.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(751, 280)
+        Me.Label37.Location = New System.Drawing.Point(757, 348)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(95, 13)
         Me.Label37.TabIndex = 254
@@ -844,16 +866,16 @@ Partial Class frmpayroll
         '
         'txtHmo
         '
-        Me.txtHmo.Location = New System.Drawing.Point(873, 254)
+        Me.txtHmo.Location = New System.Drawing.Point(879, 322)
         Me.txtHmo.Name = "txtHmo"
-        Me.txtHmo.Size = New System.Drawing.Size(100, 20)
+        Me.txtHmo.Size = New System.Drawing.Size(81, 20)
         Me.txtHmo.TabIndex = 253
         Me.txtHmo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(751, 254)
+        Me.Label36.Location = New System.Drawing.Point(757, 322)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(32, 13)
         Me.Label36.TabIndex = 252
@@ -861,16 +883,16 @@ Partial Class frmpayroll
         '
         'txtMaintenancefee
         '
-        Me.txtMaintenancefee.Location = New System.Drawing.Point(873, 228)
+        Me.txtMaintenancefee.Location = New System.Drawing.Point(879, 296)
         Me.txtMaintenancefee.Name = "txtMaintenancefee"
-        Me.txtMaintenancefee.Size = New System.Drawing.Size(100, 20)
+        Me.txtMaintenancefee.Size = New System.Drawing.Size(81, 20)
         Me.txtMaintenancefee.TabIndex = 251
         Me.txtMaintenancefee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(751, 228)
+        Me.Label35.Location = New System.Drawing.Point(757, 296)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(90, 13)
         Me.Label35.TabIndex = 250
@@ -878,16 +900,16 @@ Partial Class frmpayroll
         '
         'txtTardiness
         '
-        Me.txtTardiness.Location = New System.Drawing.Point(873, 202)
+        Me.txtTardiness.Location = New System.Drawing.Point(879, 270)
         Me.txtTardiness.Name = "txtTardiness"
-        Me.txtTardiness.Size = New System.Drawing.Size(100, 20)
+        Me.txtTardiness.Size = New System.Drawing.Size(81, 20)
         Me.txtTardiness.TabIndex = 249
         Me.txtTardiness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(751, 202)
+        Me.Label34.Location = New System.Drawing.Point(757, 270)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(53, 13)
         Me.Label34.TabIndex = 248
@@ -895,16 +917,16 @@ Partial Class frmpayroll
         '
         'txtUndertime
         '
-        Me.txtUndertime.Location = New System.Drawing.Point(873, 176)
+        Me.txtUndertime.Location = New System.Drawing.Point(879, 244)
         Me.txtUndertime.Name = "txtUndertime"
-        Me.txtUndertime.Size = New System.Drawing.Size(100, 20)
+        Me.txtUndertime.Size = New System.Drawing.Size(81, 20)
         Me.txtUndertime.TabIndex = 247
         Me.txtUndertime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(751, 176)
+        Me.Label33.Location = New System.Drawing.Point(757, 244)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(55, 13)
         Me.Label33.TabIndex = 246
@@ -912,16 +934,16 @@ Partial Class frmpayroll
         '
         'txtPagibigloan
         '
-        Me.txtPagibigloan.Location = New System.Drawing.Point(633, 283)
+        Me.txtPagibigloan.Location = New System.Drawing.Point(639, 351)
         Me.txtPagibigloan.Name = "txtPagibigloan"
-        Me.txtPagibigloan.Size = New System.Drawing.Size(100, 20)
+        Me.txtPagibigloan.Size = New System.Drawing.Size(81, 20)
         Me.txtPagibigloan.TabIndex = 245
         Me.txtPagibigloan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(511, 283)
+        Me.Label32.Location = New System.Drawing.Point(553, 359)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(69, 13)
         Me.Label32.TabIndex = 244
@@ -929,16 +951,16 @@ Partial Class frmpayroll
         '
         'txtPagibigpremium
         '
-        Me.txtPagibigpremium.Location = New System.Drawing.Point(633, 254)
+        Me.txtPagibigpremium.Location = New System.Drawing.Point(639, 322)
         Me.txtPagibigpremium.Name = "txtPagibigpremium"
-        Me.txtPagibigpremium.Size = New System.Drawing.Size(100, 20)
+        Me.txtPagibigpremium.Size = New System.Drawing.Size(81, 20)
         Me.txtPagibigpremium.TabIndex = 243
         Me.txtPagibigpremium.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(511, 254)
+        Me.Label31.Location = New System.Drawing.Point(553, 330)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(85, 13)
         Me.Label31.TabIndex = 242
@@ -946,16 +968,16 @@ Partial Class frmpayroll
         '
         'txtPhilhealth
         '
-        Me.txtPhilhealth.Location = New System.Drawing.Point(633, 228)
+        Me.txtPhilhealth.Location = New System.Drawing.Point(639, 296)
         Me.txtPhilhealth.Name = "txtPhilhealth"
-        Me.txtPhilhealth.Size = New System.Drawing.Size(100, 20)
+        Me.txtPhilhealth.Size = New System.Drawing.Size(81, 20)
         Me.txtPhilhealth.TabIndex = 241
         Me.txtPhilhealth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(511, 228)
+        Me.Label30.Location = New System.Drawing.Point(553, 304)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(53, 13)
         Me.Label30.TabIndex = 240
@@ -963,16 +985,16 @@ Partial Class frmpayroll
         '
         'txtSssloan
         '
-        Me.txtSssloan.Location = New System.Drawing.Point(633, 202)
+        Me.txtSssloan.Location = New System.Drawing.Point(639, 270)
         Me.txtSssloan.Name = "txtSssloan"
-        Me.txtSssloan.Size = New System.Drawing.Size(100, 20)
+        Me.txtSssloan.Size = New System.Drawing.Size(81, 20)
         Me.txtSssloan.TabIndex = 239
         Me.txtSssloan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(511, 202)
+        Me.Label29.Location = New System.Drawing.Point(553, 278)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(55, 13)
         Me.Label29.TabIndex = 238
@@ -980,16 +1002,16 @@ Partial Class frmpayroll
         '
         'txtSsspremium
         '
-        Me.txtSsspremium.Location = New System.Drawing.Point(633, 176)
+        Me.txtSsspremium.Location = New System.Drawing.Point(639, 244)
         Me.txtSsspremium.Name = "txtSsspremium"
-        Me.txtSsspremium.Size = New System.Drawing.Size(100, 20)
+        Me.txtSsspremium.Size = New System.Drawing.Size(81, 20)
         Me.txtSsspremium.TabIndex = 237
         Me.txtSsspremium.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(511, 176)
+        Me.Label28.Location = New System.Drawing.Point(553, 252)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(71, 13)
         Me.Label28.TabIndex = 236
@@ -999,7 +1021,7 @@ Partial Class frmpayroll
         '
         Me.Label27.AutoSize = True
         Me.Label27.ForeColor = System.Drawing.Color.Red
-        Me.Label27.Location = New System.Drawing.Point(511, 147)
+        Me.Label27.Location = New System.Drawing.Point(553, 223)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(61, 13)
         Me.Label27.TabIndex = 235
@@ -1007,9 +1029,9 @@ Partial Class frmpayroll
         '
         'txtAdjustment
         '
-        Me.txtAdjustment.Location = New System.Drawing.Point(633, 88)
+        Me.txtAdjustment.Location = New System.Drawing.Point(639, 109)
         Me.txtAdjustment.Name = "txtAdjustment"
-        Me.txtAdjustment.Size = New System.Drawing.Size(100, 20)
+        Me.txtAdjustment.Size = New System.Drawing.Size(81, 20)
         Me.txtAdjustment.TabIndex = 234
         Me.txtAdjustment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1017,7 +1039,7 @@ Partial Class frmpayroll
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(511, 88)
+        Me.Label26.Location = New System.Drawing.Point(553, 109)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(69, 13)
         Me.Label26.TabIndex = 233
@@ -1025,9 +1047,9 @@ Partial Class frmpayroll
         '
         'txtEmployeename
         '
-        Me.txtEmployeename.Location = New System.Drawing.Point(129, 43)
+        Me.txtEmployeename.Location = New System.Drawing.Point(95, 43)
         Me.txtEmployeename.Name = "txtEmployeename"
-        Me.txtEmployeename.Size = New System.Drawing.Size(311, 20)
+        Me.txtEmployeename.Size = New System.Drawing.Size(28, 20)
         Me.txtEmployeename.TabIndex = 261
         '
         'Button1
@@ -1041,18 +1063,29 @@ Partial Class frmpayroll
         '
         'btnPayslip
         '
-        Me.btnPayslip.Location = New System.Drawing.Point(838, 451)
+        Me.btnPayslip.Location = New System.Drawing.Point(808, 450)
         Me.btnPayslip.Name = "btnPayslip"
         Me.btnPayslip.Size = New System.Drawing.Size(75, 23)
         Me.btnPayslip.TabIndex = 263
         Me.btnPayslip.Text = "Payslip"
         Me.btnPayslip.UseVisualStyleBackColor = True
         '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(20, 190)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(83, 13)
+        Me.Label40.TabIndex = 264
+        Me.Label40.Text = "Regular Amount"
+        '
         'frmpayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(998, 691)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(973, 485)
+        Me.Controls.Add(Me.Label40)
         Me.Controls.Add(Me.btnPayslip)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtEmployeename)
@@ -1160,7 +1193,11 @@ Partial Class frmpayroll
         Me.Controls.Add(Me.DateTimePicker2)
         Me.Controls.Add(Me.lbldate)
         Me.Controls.Add(Me.DateTimePicker1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmpayroll"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Payroll"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1273,4 +1310,5 @@ Partial Class frmpayroll
     Friend WithEvents txtEmployeename As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnPayslip As System.Windows.Forms.Button
+    Friend WithEvents Label40 As System.Windows.Forms.Label
 End Class

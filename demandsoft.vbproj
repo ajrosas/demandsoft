@@ -100,6 +100,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frmovertime.Designer.vb">
+      <DependentUpon>frmovertime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmovertime.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmpayslip.Designer.vb">
       <DependentUpon>frmpayslip.vb</DependentUpon>
     </Compile>
@@ -112,11 +118,35 @@
     <Compile Include="Forms\frmpayroll.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmtimein.Designer.vb">
+      <DependentUpon>frmtimein.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmtimein.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmtimekeeping.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmtimekeeping.Designer.vb">
       <DependentUpon>frmtimekeeping.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmtimekeepingtemp.Designer.vb">
+      <DependentUpon>frmtimekeepingtemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmtimekeepingtemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmtimelog.Designer.vb">
+      <DependentUpon>frmtimelog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmtimelog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmtimeout.Designer.vb">
+      <DependentUpon>frmtimeout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmtimeout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -136,14 +166,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frmovertime.resx">
+      <DependentUpon>frmovertime.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmpayroll.resx">
       <DependentUpon>frmpayroll.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmpayslip.resx">
       <DependentUpon>frmpayslip.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmtimein.resx">
+      <DependentUpon>frmtimein.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmtimekeeping.resx">
       <DependentUpon>frmtimekeeping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmtimekeepingtemp.resx">
+      <DependentUpon>frmtimekeepingtemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmtimelog.resx">
+      <DependentUpon>frmtimelog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmtimeout.resx">
+      <DependentUpon>frmtimeout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

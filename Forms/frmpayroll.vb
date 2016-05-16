@@ -20,7 +20,7 @@ Public Class frmpayroll
     End Sub
     Public Sub ToResetValue()
         txtEmployeename.Text = ""
-        txtRate.Text = "310"
+        txtRate.Text = "0.00"
         txtProduction.Text = "0"
         txtSocioecono.Text = "0"
         txtMeal.Text = "0"
@@ -182,12 +182,12 @@ Public Class frmpayroll
     Private Sub FillFname()
         Try
             con.Open()
-            sql = "SELECT * from tbltimekeeping WHERE date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
+            sql = "SELECT * tbltimekeeping WHERE date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
             cmd = New MySqlCommand(sql, con)
             dr = cmd.ExecuteReader
             While dr.Read
-                Dim sFname = dr.GetString("firstname") + " " + dr.GetString("middlename") + " " + dr.GetString("lastname")
-                cmbEmployeename.Items.Add(sFname)
+                Dim sId = dr.GetInt32("employee_id")
+                cmbEmployeename.Items.Add(sId)
             End While
             con.Close()
         Catch ex As Exception
@@ -205,25 +205,25 @@ Public Class frmpayroll
     End Sub
 
     Private Sub txtlegalholidaywpayval_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtlegalholidaywpayval.TextChanged
-        If txtlegalholidaywpayval.Text = "8" Then
+        If txtlegalholidaywpayval.Text = "8.00" Then
             txtDaystotalwlegal.Text = Val(Me.txtDaystotal.Text) + 1
 
         End If
 
-        If txtlegalholidaywpayval.Text = "16" Then
+        If txtlegalholidaywpayval.Text = "16.00" Then
             txtDaystotalwlegal.Text = Val(Me.txtDaystotal.Text) + 2
         End If
         Call ComputePayroll()
     End Sub
 
     Private Sub txtSunotval_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSunotval.TextChanged
-        If txtSunotval.Text = "8" Then
+        If txtSunotval.Text = "8.00" Then
             txtDaystotal.Text = Val(Me.txtDaystotal.Text) + 1
             txtDaysworkedwsunday.Text = Val(Me.txtDaysworked.Text) + 1
 
         End If
 
-        If txtSunotval.Text = "16" Then
+        If txtSunotval.Text = "16.00" Then
             txtDaystotal.Text = Val(Me.txtDaystotal.Text) + 2
             txtDaysworkedwsunday.Text = Val(Me.txtDaysworked.Text) + 2
         End If
@@ -235,12 +235,12 @@ Public Class frmpayroll
     End Sub
 
     Private Sub txtLegalotval_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtLegalotval.TextChanged
-        If txtLegalotval.Text = "8" Then
+        If txtLegalotval.Text = "8.00" Then
             txtDaystotal.Text = Val(Me.txtDaystotal.Text) + 1
             txtDaystotalwlegal.Text = Val(Me.txtDaystotal.Text)
         End If
 
-        If txtLegalotval.Text = "16" Then
+        If txtLegalotval.Text = "16.00" Then
             txtDaystotal.Text = Val(Me.txtDaystotal.Text) + 2
             txtDaystotalwlegal.Text = Val(Me.txtDaystotal.Text)
         End If
@@ -372,23 +372,33 @@ Public Class frmpayroll
     End Sub
 
     Private Sub txtEmployeename_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtEmployeename.TextChanged
+
+        txtRate.Text = "310.00"
+
+        txtPhilhealth.Text = "100.00"
+        txtPhilhealth.Text = Format(Val(txtPhilhealth.Text), "0.00")
+        txtPagibigpremium.Text = "100.00"
+        txtPagibigpremium.Text = Format(Val(txtPagibigpremium.Text), "0.00")
+        txtHmo.Text = "145.00"
+        txtHmo.Text = Format(Val(txtHmo.Text), "0.00")
+
         Try
             con.Open()
-            sql = "SELECT * FROM tbltimekeeping WHERE firstname+' ' + middlename+' '+lastname ='" & txtEmployeename.Text & "' AND date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
+            sql = "SELECT * FROM tbltimekeeping WHERE employee_id ='" & txtEmployeename.Text & "' AND date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
             cmd = New MySqlCommand(sql, con)
             dr = cmd.ExecuteReader
             While dr.Read
-                txtId.Text = dr.GetString("id")
+                txtId.Text = dr.GetInt32("id")
                 txtLastname.Text = dr.GetString("lastname")
                 txtFirstname.Text = dr.GetString("firstname")
                 txtMiddlename.Text = dr.GetString("middlename")
                 txtReguralhoursworked.Text = dr.GetInt32("regular_hours_worked")
                 txtRegotval.Text = dr.GetDecimal("regular_ot")
-                txtSunotval.Text = dr.GetInt32("sunday_ot")
+                txtSunotval.Text = dr.GetDecimal("sunday_ot")
                 txtSunotexcessval.Text = dr.GetDecimal("sunday_ot_excess")
-                txtLegalotval.Text = dr.GetInt32("legal_ot")
+                txtLegalotval.Text = dr.GetDecimal("legal_ot")
                 txtLegalotexcessval.Text = dr.GetDecimal("legal_ot_excess")
-                txtlegalholidaywpayval.Text = dr.GetInt32("legal_holiday_w_pay")
+                txtlegalholidaywpayval.Text = dr.GetDecimal("legal_holiday_w_pay")
                 txtNightdifferentialval.Text = dr.GetDecimal("night_differential")
                 txtNightdifferentialotval.Text = dr.GetDecimal("night_differential_ot")
                 txtSundaynightdiffval.Text = dr.GetDecimal("sunday_night_differential")
@@ -417,5 +427,80 @@ Public Class frmpayroll
 
     Private Sub btnPayslip_Click(sender As System.Object, e As System.EventArgs) Handles btnPayslip.Click
         frmpayslip.Show()
+    End Sub
+
+    Private Sub txtGrosspay1_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtGrosspay1.TextChanged
+        Dim value As Double
+        value = txtGrosspay1.Text
+        Select Case value
+            Case Is <= 1249.99
+                txtSsspremium.Text = "36.30"
+            Case Is <= 1749.99
+                txtSsspremium.Text = "54.50"
+            Case Is <= 2249.99
+                txtSsspremium.Text = "72.70"
+            Case Is <= 2749.99
+                txtSsspremium.Text = "90.80"
+            Case Is <= 3249.99
+                txtSsspremium.Text = "109.00"
+            Case Is <= 3749.99
+                txtSsspremium.Text = "127.20"
+            Case Is <= 4249.99
+                txtSsspremium.Text = "145.30"
+            Case Is <= 4749.99
+                txtSsspremium.Text = "163.50"
+            Case Is <= 5249.99
+                txtSsspremium.Text = "181.70"
+            Case Is <= 5749.99
+                txtSsspremium.Text = "199.80"
+            Case Is <= 6249.99
+                txtSsspremium.Text = "218.00"
+            Case Is <= 6749.99
+                txtSsspremium.Text = "236.20"
+            Case Is <= 7249.99
+                txtSsspremium.Text = "254.30"
+            Case Is <= 7749.99
+                txtSsspremium.Text = "272.50"
+            Case Is <= 8249.99
+                txtSsspremium.Text = "290.70"
+            Case Is <= 8749.99
+                txtSsspremium.Text = "308.80"
+            Case Is <= 9249.99
+                txtSsspremium.Text = "327.00"
+            Case Is <= 9749.99
+                txtSsspremium.Text = "345.20"
+            Case Is <= 10249.99
+                txtSsspremium.Text = "363.30"
+            Case Is <= 10749.99
+                txtSsspremium.Text = "381.50"
+            Case Is <= 11249.99
+                txtSsspremium.Text = "399.70"
+            Case Is <= 11749.99
+                txtSsspremium.Text = "417.80"
+            Case Is <= 12249.99
+                txtSsspremium.Text = "436.00"
+            Case Is <= 12749.99
+                txtSsspremium.Text = "454.20"
+            Case Is <= 13249.99
+                txtSsspremium.Text = "472.30"
+            Case Is <= 13749.99
+                txtSsspremium.Text = "490.50"
+            Case Is <= 14249.99
+                txtSsspremium.Text = "508.70"
+            Case Is <= 14749.99
+                txtSsspremium.Text = "526.80"
+            Case Is <= 15249.99
+                txtSsspremium.Text = "545.00"
+            Case Is <= 15749.99
+                txtSsspremium.Text = "563.20"
+            Case Is < 15750.0
+                txtSsspremium.Text = "581.30"
+            Case Else
+                Debug.WriteLine("The value did not fall into a range.")
+        End Select
+    End Sub
+
+    Private Sub txtMeal_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtMeal.TextChanged
+
     End Sub
 End Class
