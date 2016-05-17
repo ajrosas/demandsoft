@@ -182,11 +182,11 @@ Public Class frmpayroll
     Private Sub FillFname()
         Try
             con.Open()
-            sql = "SELECT * tbltimekeeping WHERE date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
+            sql = "SELECT * FROM tbltimekeeping WHERE date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
             cmd = New MySqlCommand(sql, con)
             dr = cmd.ExecuteReader
             While dr.Read
-                Dim sId = dr.GetInt32("employee_id")
+                Dim sId = dr.GetInt32("id")
                 cmbEmployeename.Items.Add(sId)
             End While
             con.Close()
@@ -384,7 +384,7 @@ Public Class frmpayroll
 
         Try
             con.Open()
-            sql = "SELECT * FROM tbltimekeeping WHERE employee_id ='" & txtEmployeename.Text & "' AND date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
+            sql = "SELECT * FROM tbltimekeeping WHERE id ='" & txtEmployeename.Text & "' AND date_from = '" & txtdatefrom.Text & "' AND date_to = '" & txtdateto.Text & "'"
             cmd = New MySqlCommand(sql, con)
             dr = cmd.ExecuteReader
             While dr.Read

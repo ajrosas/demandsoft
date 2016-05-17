@@ -34,6 +34,7 @@ Partial Class frmtimeout
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,7 +59,7 @@ Partial Class frmtimeout
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(11, 41)
+        Me.DataGridView1.Location = New System.Drawing.Point(11, 50)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1331, 607)
         Me.DataGridView1.TabIndex = 47
@@ -85,6 +86,9 @@ Partial Class frmtimeout
         Me.btnBrowse.Text = "Browse"
         Me.btnBrowse.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        '
         'ProgressBar2
         '
         Me.ProgressBar2.Location = New System.Drawing.Point(1112, 663)
@@ -101,21 +105,35 @@ Partial Class frmtimeout
         Me.ProgressBar1.TabIndex = 51
         Me.ProgressBar1.Visible = False
         '
+        'Timer2
+        '
+        '
         'btnNext
         '
         Me.btnNext.Enabled = False
-        Me.btnNext.Location = New System.Drawing.Point(1267, 654)
+        Me.btnNext.Location = New System.Drawing.Point(1267, 663)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(75, 23)
         Me.btnNext.TabIndex = 53
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1262, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(80, 16)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "TIME OUT"
+        '
         'frmtimeout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1354, 733)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.ProgressBar1)
@@ -142,4 +160,5 @@ Partial Class frmtimeout
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents btnNext As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

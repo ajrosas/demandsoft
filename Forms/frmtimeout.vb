@@ -111,4 +111,21 @@ Public Class frmtimeout
     Private Sub btnNext_Click(sender As System.Object, e As System.EventArgs) Handles btnNext.Click
         frmtimekeepingtemp.Show()
     End Sub
+
+    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
+        ProgressBar2.Increment(1)
+        If ProgressBar2.Value = ProgressBar2.Maximum Then
+            btnBrowse.Text = "Browse"
+            btnSave.Text = "Save"
+        End If
+        btnSave.Enabled = False
+    End Sub
+
+    Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
+        ProgressBar1.Increment(1)
+        If ProgressBar1.Value = ProgressBar1.Maximum Then
+            btnBrowse.Text = "Browse"
+            btnSave.Text = "Save"
+        End If
+    End Sub
 End Class

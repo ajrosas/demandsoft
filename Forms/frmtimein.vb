@@ -52,7 +52,7 @@ Public Class frmtimein
             dta.Fill(dts, "[Sheet2$]")
             DataGridView1.DataSource = dts
             DataGridView1.DataMember = "[Sheet2$]"
-            DataGridView1.Columns.Item("DaiGong").DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss"
+            DataGridView1.Columns.Item("DaiGong").DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss tt"
             conn.Close()
         End If
         btnSave.Enabled = True
@@ -118,8 +118,8 @@ Public Class frmtimein
     End Sub
 
     Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
-        ProgressBar1.Increment(1)
-        If ProgressBar1.Value = ProgressBar1.Maximum Then
+        ProgressBar2.Increment(1)
+        If ProgressBar2.Value = ProgressBar2.Maximum Then
             btnBrowse.Text = "Browse"
             btnSave.Text = "Save"
         End If

@@ -34,6 +34,7 @@ Partial Class frmtimein
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,7 +75,7 @@ Partial Class frmtimein
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(9, 41)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1342, 607)
+        Me.DataGridView1.Size = New System.Drawing.Size(1333, 607)
         Me.DataGridView1.TabIndex = 42
         '
         'btnBrowse
@@ -118,11 +119,22 @@ Partial Class frmtimein
         'Timer2
         '
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1279, 16)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 16)
+        Me.Label2.TabIndex = 49
+        Me.Label2.Text = "TIME IN"
+        '
         'frmtimein
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1354, 733)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.btnNext)
@@ -149,4 +161,5 @@ Partial Class frmtimein
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ProgressBar2 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
